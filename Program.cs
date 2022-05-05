@@ -11,11 +11,12 @@ namespace LineComparisonComputation
 
             //Initialising an instance of the class LineCompComputation
             LineCompComputation lineObj = new LineCompComputation();
+            Console.WriteLine(lineObj);
 
             //Calling methods to execute the required logic to find the length of lines and compare their length 
             lineObj.Line1Modelling();
             lineObj.Line2Modelling();
-            lineObj.LineEqualityCheck();
+            lineObj.LineComparison();
             Console.ReadKey();
 
         }
