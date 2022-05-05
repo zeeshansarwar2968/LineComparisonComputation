@@ -62,7 +62,7 @@ namespace LineComparisonComputation
             }
         }
 
-        //Function containing logic to check the equality of the two lines
+        //Function containing logic to compare the length of two lines
         public void LineComparison()
         {
             if (Line1Length > Line2Length)
