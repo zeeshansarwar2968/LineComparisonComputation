@@ -11,7 +11,7 @@ namespace LineComparisonComputation
         // Initialising the variable to store the line length 
         double lineLength;
         
-        //Function containg logic to find the length of the line
+        //Function containing logic to find the length of the line
         public void LineModelling()
         {
             Console.Write("Please enter the Point 1 coordinate x1: ");
