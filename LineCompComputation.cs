@@ -8,25 +8,59 @@ namespace LineComparisonComputation
 {
     public class LineCompComputation
     {
-        // Initialising the variable to store the line length 
-        double lineLength;
+        // Initialising the variables to store the line length values
+        double Line1Length, Line2Length;
         
-        //Function containing logic to find the length of the line
-        public void LineModelling()
+        //Function containing logic to find the length of the line 1
+        public void Line1Modelling()
         {
-            Console.Write("Please enter the Point 1 coordinate x1: ");
+            Console.Write("Please enter the Line 1 coordinate x1: ");
             int x1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Please enter the Point 1 coordinate y1: ");
+            Console.Write("Please enter the Line 1 coordinate y1: ");
             int y1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Please enter the Point 2 coordinate x2: ");
+            Console.Write("Please enter the Line 1 coordinate x2: ");
             int x2 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Please enter the Point 2 coordinate y2: ");
+            Console.Write("Please enter the Line 1 coordinate y2: ");
             int y2 = Convert.ToInt32(Console.ReadLine());
 
             double length = Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2);
-            lineLength = Math.Sqrt(length);
-            Console.WriteLine("The Length of the line is {0}",lineLength);
+            Line1Length = Math.Sqrt(length);
+            Console.WriteLine("The Length of the line 1 is {0}", Line1Length);
+            Console.WriteLine("");
 
+        }
+
+        //Function containing logic to find the length of the line 2
+        public void Line2Modelling()
+        {
+            Console.Write("Please enter the Line 2 coordinate x3: ");
+            int x3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter the Line 2 coordinate y3: ");
+            int y3 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter the Line 2 coordinate x4: ");
+            int x4 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter the Line 2 coordinate y4: ");
+            int y4 = Convert.ToInt32(Console.ReadLine());
+
+            double length = Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2);
+            Line2Length = Math.Sqrt(length);
+            Console.WriteLine("The Length of the line 2 is {0}", Line2Length);
+            Console.WriteLine("");
+
+        }
+
+        //Function containing logic to check the equality of the two lines
+        public void LineEqualityCheck()
+        {
+            if (Line1Length == Line2Length)
+            {
+                Console.WriteLine("The Lines are equal in length");
+
+            }
+            else
+            {
+                Console.WriteLine("The Lines are not equal in length");
+            }
         }
     }
 }
