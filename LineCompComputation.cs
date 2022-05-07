@@ -9,8 +9,8 @@ namespace LineComparisonComputation
     public class LineCompComputation
     {
         // Initialising the variables to store the line length values
-        double Line1Length = 0; 
-        double Line2Length = 0;
+        public double Line1Length = 0; 
+        public double Line2Length = 0;
         //Function containing logic to find the length of the line 1
         public void Line1Modelling()
         {
