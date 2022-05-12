@@ -9,10 +9,10 @@ namespace LineComparisonComputation
     public class LineCompComputation
     {
         // Initialising the variables to store the line length values
-        public double Line1Length = 0; 
-        public double Line2Length = 0;
-        //Function containing logic to find the length of the line 1
-        public void Line1Modelling()
+        public static double Line1Length = 0; 
+        public static double Line2Length = 0;
+        //Function/method containing logic to find the length of the line 1
+        public static void Line1Modelling()
         {
             Console.Write("Please enter the Line 1 coordinate x1: ");
             int x1 = Convert.ToInt32(Console.ReadLine());
@@ -30,8 +30,8 @@ namespace LineComparisonComputation
 
         }
 
-        //Function containing logic to find the length of the line 2
-        public void Line2Modelling()
+        //Function/Method containing logic to find the length of the line 2
+        public static void Line2Modelling()
         {
             Console.Write("Please enter the Line 2 coordinate x3: ");
             int x3 = Convert.ToInt32(Console.ReadLine());
@@ -49,8 +49,8 @@ namespace LineComparisonComputation
 
         }
 
-        //Function containing logic to check the equality of the two lines
-        public void LineEqualityCheck()
+        //Function/Method containing logic to check the equality of the two lines
+        public static void LineEqualityCheck()
         {
             if (Line1Length == Line2Length)
             {
@@ -62,8 +62,8 @@ namespace LineComparisonComputation
             }
         }
 
-        //Function containing logic to compare the length of two lines
-        public void LineComparison()
+        //Function/Method containing logic to compare the length of two lines
+        public static void LineComparison()
         {
             if (Line1Length > Line2Length)
             {
